@@ -2,7 +2,6 @@
 Glenn Vian,Garry Vian,Glenn and Garry Vian are brothers.
 Glenn Vian,Jonathan Rees,Jonathan Rees is a former brother-in-law to Glenn and Garry Vian.
 Garry Vian,Jonathan Rees,Jonathan Rees is a former brother-in-law to Glenn and Garry Vian.
-Daniel Morgan,Alastair Morgan,Alastair Morgan is the brother of Daniel Morgan.
 Daniel Morgan,Jonathan Rees,"Daniel Morgan and Jonathan Rees were business partners in their investigation agency, Southern Investigations."
 Daniel Morgan,Southern Investigations,"Daniel Morgan and Jonathan Rees were business partners in their investigation agency, Southern Investigations."
 Jonathan Rees,Southern Investigations,"Daniel Morgan and Jonathan Rees were business partners in their investigation agency, Southern Investigations."
@@ -20,3 +19,13 @@ Crimewatch,Dave Cook,Dave Cook appeared on Crimewatch to make an appeal for info
 Jacqui Hames,Dave Cook,Dave Cook and Jacqui Hames were married.
 Rupert Murdoch,Rebekah Brooks,"Rebekah Brooks is a protégé of Rupert Murdoch. She has worked for various Murdoch-owned newspapers, and is now CEO of Murdoch's subsidiary, News UK."
 News of the World,Rebekah Brooks,Rebekah Brooks was the editor of the News of the World from 2000 - 2003.
+Dean Vian,Garry Vian,"Dean Vian, a former Metropolitan police officer, is the son of career criminal Garry Vian."
+Dean Vian,Glenn Vian,"Dean Vian, a former Metropolitan police officer, is the nephew of career criminal Glenn Vian. Dean said that his mother had told him that Glenn was responsible for killing Daniel Morgan."
+Alex Marunchak,Jonathan Rees,"Marunchak and Rees were close friends, with Marunchak and News of the World being one of Rees' biggest clients."
+News of the World,Dave Cook,"News of the World attempted to interfere with the investigation into Daniel Morgan's murder due to its association with one of the prime suspects, Jonathan Rees. Vans leased by News International were detected surveilling lead detective Dave Cook and his wife Jacqui Hames, on the pretext that they received a tip that the two were having an affair."
+News of the World,Jacqui Hames,"News of the World attempted to interfere with the investigation into Daniel Morgan's murder due to its association with one of the prime suspects, Jonathan Rees. Vans leased by News International were detected surveilling lead detective Dave Cook and his wife Jacqui Hames, on the pretext that they received a tip that the two were having an affair."
+Jonathan Rees,Derek Haslam,Derek Haslam worked undercover for nine years to get information from murder suspect Jonathan Rees. The operation was cut short when the operation uncovered evidence that Rees was planning to falsely incriminate a woman for drug-dealing so that her ex-husband would obtain custody of their son.
+Daniel Morgan,Derek Haslam,Daniel Morgan and Derek Haslam knew each other and were friends.
+Daniel Morgan,Golden Lion,"Daniel Morgan was murdered in the carpack of the Golden Lion pub in Sydenham, London, in 1987."
+Jonathan Rees,Golden Lion,"Jonathan Rees had been drinking with Daniel Morgan in the Golden Lion pub on the evening that Morgan was murdered, in 1987."
+Alan Holmes,Daniel Morgan,Daniel Morgan and Alan Holmes may have worked together on unveiling police corruption.

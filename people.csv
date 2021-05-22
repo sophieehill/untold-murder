@@ -1,19 +1,20 @@
-﻿id,type,desc
-Daniel Morgan,person,Daniel Morgan was a private investigator who was murdered in 1987. (Image: Metropolitan Police/PA Wire)
-Jonathan Rees,person,Jonathan Rees was a private investigator and business partner of Daniel Morgan. (Image: Channel 4)
-Sid Fillery,person,Sid Fillery is a former police detective. (Image: REX/Shutterstock)
-Glenn Vian,person,Glenn Vian is a career criminal. (Image: REX/Shutterstock)
-Alastair Morgan,person,Alastair is the brother of murdered private investigator Daniel Morgan. (Image: Untold Murder)
-Garry Vian,person,Garry Vian is a career criminal. (Image: REX/Shutterstock)
-Dean Vian,person,Dean Vian is a former Metropolitcan police officer. (Image: Daily Mail)
-Dave Cook,person,"Dave Cook is a former Detective Chief Superintendent, who ran the 4th and 5th investigations into Daniel Morgan's murder."
-Golden Lion,pub,"The Golden Lion is a pub in Sydenham, London, where Daniel Morgan was murdered in the carpark in 1987. (Image: Rex Features)"
-Southern Investigations,firm,Southern Investigations was a private investigation agency founded by Daniel Morgan and Jonathan Rees.
-News of the World,newspaper,News of the World was a weekly tabloid that was shut down in 2011 due to revelations of its involvement in the phone hacking scandal.
-Margaret Harrison,person,Margaret Harrison is the wife of Jonathan Rees.
-Rupert Murdoch,person,"Rupert Murdoch is a media mogul who owns hundreds of local, national, and international media outlets across the world."
-Rebekah Brooks,person,Rebekah Brooks is a media executive and protégé of Rupert Murdoch.
-Alex Marunchak,person,Alex Marunchak was the crime editor of the News of the World. (Image: Byline Investigates)
-Jill Dando,person,Jill Dando was a journalist and TV presenter who was murdered outside her own home in 1999.
-Jacqui Hames,person,Jacqui Hames is a journalist and TV presenter.
-Crimewatch,TV,Crimewatch was a TV programme that reconstructed major unsolved crimes to gain information from the public.
+﻿id,type,desc,shape
+Daniel Morgan,person,"Daniel Morgan was a private investigator who was murdered in 1987. Shortly before his death, he had told several people that he was about to sell a story to a newspaper about large scale police corruption.",circularImage
+Jonathan Rees,person,Jonathan Rees was a private investigator and business partner of Daniel Morgan.,circularImage
+Sid Fillery,person,Sid Fillery is a former police detective.,circularImage
+Glenn Vian,person,Glenn Vian is a career criminal.,circularImage
+Garry Vian,person,Garry Vian is a career criminal.,circularImage
+Dean Vian,person,Dean Vian is a former Metropolitcan police officer.,circularImage
+Dave Cook,person,"Dave Cook is a former Detective Chief Superintendent, who ran the 4th and 5th investigations into Daniel Morgan's murder.",circularImage
+Golden Lion,pub,"The Golden Lion is a pub in Sydenham, London, where Daniel Morgan was murdered in the carpark in 1987.",image
+Southern Investigations,firm,Southern Investigations was a private investigation agency founded by Daniel Morgan and Jonathan Rees.,image
+News of the World,newspaper,News of the World was a weekly tabloid that was shut down in 2011 due to revelations of its involvement in the phone hacking scandal.,image
+Margaret Harrison,person,Margaret Harrison is the wife of Jonathan Rees.,circularImage
+Rupert Murdoch,person,"Rupert Murdoch is a media mogul who owns hundreds of local, national, and international media outlets across the world.",circularImage
+Rebekah Brooks,person,Rebekah Brooks is a media executive and protégé of Rupert Murdoch.,circularImage
+Alex Marunchak,person,Alex Marunchak was the crime editor of the News of the World.,circularImage
+Jill Dando,person,Jill Dando was a journalist and TV presenter who was murdered outside her own home in 1999.,circularImage
+Jacqui Hames,person,Jacqui Hames is a journalist and TV presenter.,circularImage
+Crimewatch,TV,Crimewatch was a TV programme that reconstructed major unsolved crimes to gain information from the public.,image
+Alan Holmes,person,"Alan ""Taffy"" Holmes was a detective who apparently committed suicide in 1987, just a few months after the murder of Daniel Morgan.",
+Derek Haslam,person,Derek Haslam is a former Metropolitan police officer who later worked as an undercover agent.,
