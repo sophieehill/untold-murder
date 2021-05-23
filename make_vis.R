@@ -73,6 +73,6 @@ visNetwork(people, connections, width = "1000px", height = "600px",
   visLayout(randomSeed = 1023) %>%
   htmlwidgets::appendContent(htmltools::includeHTML("meta.html")) %>%
   htmlwidgets::saveWidget(file="untold-murder-viz.html", 
-                          background="#262421", selfcontained=TRUE)
+                          background="#262421", selfcontained=FALSE)
 
 
