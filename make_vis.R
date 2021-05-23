@@ -1,7 +1,7 @@
 library(tidyverse) # for data manipulation
 library(visNetwork) # for network visualization
 library(htmlwidgets) # to set background color and save as widget
-
+library(metathis)
 
 # define color palette
 my_red <- "#e44c3b"
@@ -70,7 +70,8 @@ visNetwork(people, connections, width = "1000px", height = "600px",
              forceAtlas2Based = list(gravitationalConstant = -300),
              stabilization = TRUE) %>%
   addFontAwesome() %>%
-  visLayout(randomSeed = 1023) %>% 
+  visLayout(randomSeed = 1023) %>%
+  htmlwidgets::appendContent(htmltools::includeHTML("meta.html")) %>%
   htmlwidgets::saveWidget(file="untold-murder-viz.html", 
                           background="#262421", selfcontained=TRUE)
 
