@@ -1,5 +1,7 @@
 library(tidyverse) # for data manipulation
 library(visNetwork) # for network visualization
+library(htmlwidgets) # to set background color and save as widget
+
 
 # define color palette
 my_red <- "#e44c3b"
@@ -30,21 +32,22 @@ connections$title <- paste0("<p>", connections$title, "</p>")
 connections$color.highlight <- my_red
 connections$color.hover <- my_red
 # connection width
-connections$value <- 10
+connections$width <- as.integer(10)
 
-visNetwork(people, connections, width = "100%", height = "500px", 
-           background = "black", border = "white",
+visNetwork(people, connections, width = "1000px", height = "600px", 
+           background = my_black, border = my_black,
            main=list(text="\n \n \n THE DANIEL MORGAN MURDER CASE",
                      style='font-family:"Big Brother", sans-serif; 
                      font-size:50px;text-align:center;color:#fff9ef;'),
            submain=list(text="\nAn interactive visualization based on reporting in the podcast/book, <a href='http://www.untoldmurder.com/' style='color:#fff9ef'>Untold Murder</a>",
                         style='font-family:"SpecialElite-Regular", sans-serif;font-size:20px;text-align:center;color:#fff9ef;')) %>%
-  visEdges(smooth=TRUE) %>%
+  visEdges(smooth=TRUE, width=20, shadow=TRUE, color=my_white) %>%
   visNodes(
-    font = list(color=my_white, size=28),
-    borderWidth = 3, brokenImage = "https://raw.githubusercontent.com/sophieehill/untold-murder/main/photos/compressed/broken_image.png",
-    shadow=list(enabled=TRUE, color="#776c63"),
+    font = list(color=my_white, size=28, background=my_black),
+    borderWidth = 2, brokenImage = "https://raw.githubusercontent.com/sophieehill/untold-murder/main/photos/compressed/broken_image.png",
+    shadow=list(enabled=TRUE),
     image = image,
+    scaling = list(min=80),
     shapeProperties = list(borderRadius=3, useBorderWithImage=T),
     color=list(background=my_white, border=my_white, 
                highlight=my_red, hover=my_red)
@@ -64,10 +67,11 @@ visNetwork(people, connections, width = "100%", height = "500px",
   visPhysics(solver = "forceAtlas2Based", 
              maxVelocity = 1000,
              minVelocity = 5,
-             forceAtlas2Based = list(gravitationalConstant = -500),
+             forceAtlas2Based = list(gravitationalConstant = -300),
              stabilization = TRUE) %>%
   addFontAwesome() %>%
-  visLayout(randomSeed = 4444) %>%
-  visSave(file = "untold-murder.html", selfcontained = TRUE)
+  visLayout(randomSeed = 2224) %>% 
+  htmlwidgets::saveWidget(file="untold-murder-viz.html", 
+                          background="#262421", selfcontained=TRUE)
 
 
