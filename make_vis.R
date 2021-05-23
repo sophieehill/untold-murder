@@ -34,7 +34,7 @@ connections$color.hover <- my_red
 # connection width
 connections$width <- as.integer(10)
 
-visNetwork(people, connections, width = "1000px", height = "600px", 
+my_graph <- visNetwork(people, connections, width = "1000px", height = "600px", 
            background = my_black, border = my_black,
            main=list(text="THE DANIEL MORGAN MURDER CASE",
                      style='font-family:"Big Brother", sans-serif; 
@@ -70,9 +70,20 @@ visNetwork(people, connections, width = "1000px", height = "600px",
              forceAtlas2Based = list(gravitationalConstant = -300),
              stabilization = TRUE) %>%
   addFontAwesome() %>%
-  visLayout(randomSeed = 1023) %>%
+  visLayout(randomSeed = 1023) 
+
+
+my_graph %>%
   htmlwidgets::appendContent(htmltools::includeHTML("meta.html")) %>%
   htmlwidgets::saveWidget(file="untold-murder-viz.html", 
                           background="#262421", selfcontained=FALSE)
 
+# exporting as a non-selfcontained file otherwise the HTML is too big
+# and the Twitter social card doesn't load
+# but remember you need to library of dependencies to load fonts etc.
+
+my_graph %>%
+  htmlwidgets::appendContent(htmltools::includeHTML("meta.html")) %>%
+  htmlwidgets::saveWidget(file="untold-murder-viz-selfcontained.html", 
+                          background="#262421", selfcontained=TRUE)
 
