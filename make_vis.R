@@ -36,12 +36,12 @@ connections$width <- as.integer(10)
 
 visNetwork(people, connections, width = "1000px", height = "600px", 
            background = my_black, border = my_black,
-           main=list(text="\n \n \n THE DANIEL MORGAN MURDER CASE",
+           main=list(text="THE DANIEL MORGAN MURDER CASE",
                      style='font-family:"Big Brother", sans-serif; 
                      font-size:50px;text-align:center;color:#fff9ef;'),
            submain=list(text="\nAn interactive visualization based on reporting in the podcast/book, <a href='http://www.untoldmurder.com/' style='color:#fff9ef'>Untold Murder</a>",
                         style='font-family:"SpecialElite-Regular", sans-serif;font-size:20px;text-align:center;color:#fff9ef;')) %>%
-  visEdges(smooth=TRUE, width=20, shadow=TRUE, color=my_white) %>%
+  visEdges(smooth=TRUE, width=40, shadow=TRUE, color=my_white) %>%
   visNodes(
     font = list(color=my_white, size=28, background=my_black),
     borderWidth = 2, brokenImage = "https://raw.githubusercontent.com/sophieehill/untold-murder/main/photos/compressed/broken_image.png",
@@ -70,7 +70,7 @@ visNetwork(people, connections, width = "1000px", height = "600px",
              forceAtlas2Based = list(gravitationalConstant = -300),
              stabilization = TRUE) %>%
   addFontAwesome() %>%
-  visLayout(randomSeed = 2224) %>% 
+  visLayout(randomSeed = 21021) %>% 
   htmlwidgets::saveWidget(file="untold-murder-viz.html", 
                           background="#262421", selfcontained=TRUE)
 
