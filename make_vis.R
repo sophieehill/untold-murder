@@ -82,7 +82,38 @@ my_graph %>%
 # and the Twitter social card doesn't load
 # but remember you need to library of dependencies to load fonts etc.
 
-my_graph %>%
+visNetwork(people, connections, width = "1000px", height = "600px", 
+                       background = my_black, border = my_black) %>%
+  visEdges(smooth=TRUE, width=40, shadow=TRUE, color=my_white) %>%
+  visNodes(
+    font = list(color=my_white, size=28, background=my_black),
+    borderWidth = 2, brokenImage = "https://raw.githubusercontent.com/sophieehill/untold-murder/main/photos/compressed/broken_image.png",
+    shadow=list(enabled=TRUE),
+    image = image,
+    scaling = list(min=80),
+    shapeProperties = list(borderRadius=3, useBorderWithImage=T),
+    color=list(background=my_white, border=my_white, 
+               highlight=my_red, hover=my_red)
+  ) %>%
+  visOptions(highlightNearest = list(enabled = F, degree = 10, 
+                                     hover = F,
+                                     labelOnly=FALSE),
+             nodesIdSelection=FALSE) %>%
+  visInteraction(hover=TRUE, zoomView = TRUE,
+                 navigationButtons = FALSE,
+                 tooltipStyle = 'position: fixed;visibility:hidden;padding: 5px;
+                font-family: sans-serif;font-size:16px;
+                font-color: #776c63; background-color: #fff9ef;
+                -moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;
+                 border: 0px solid #fff9ef; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+                 max-width:240px;overflow-wrap: normal;margin-left: 70px;') %>%
+  visPhysics(solver = "forceAtlas2Based", 
+             maxVelocity = 1000,
+             minVelocity = 5,
+             forceAtlas2Based = list(gravitationalConstant = -300),
+             stabilization = TRUE) %>%
+  addFontAwesome() %>%
+  visLayout(randomSeed = 1023) %>%
   htmlwidgets::appendContent(htmltools::includeHTML("meta.html")) %>%
   htmlwidgets::saveWidget(file="untold-murder-viz-selfcontained.html", 
                           background="#262421", selfcontained=TRUE)
