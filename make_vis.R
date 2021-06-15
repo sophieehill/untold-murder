@@ -113,7 +113,7 @@ visNetwork(people, connections, width = "1000px", height = "600px",
              forceAtlas2Based = list(gravitationalConstant = -300),
              stabilization = TRUE) %>%
   addFontAwesome() %>%
-  visLayout(randomSeed = 1023) %>%
+  visLayout(randomSeed = 1023, improvedLayout=FALSE) %>%
   htmlwidgets::appendContent(htmltools::includeHTML("meta.html")) %>%
   htmlwidgets::saveWidget(file="untold-murder-viz-selfcontained.html", 
                           background="#262421", selfcontained=TRUE)
