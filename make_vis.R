@@ -34,7 +34,7 @@ connections$color.hover <- my_red
 # connection width
 connections$width <- as.integer(10)
 
-my_graph <- visNetwork(people, connections, width = "100%", height = "600px", 
+my_graph <- visNetwork(people, connections, width = "100%", height = "100vh", 
            background = my_black, border = my_black,
            main=list(text="THE DANIEL MORGAN MURDER CASE",
                      style='font-family:"Big Brother", sans-serif; 
@@ -85,7 +85,7 @@ my_graph %>%
 # and the Twitter social card doesn't load
 # but remember you need to library of dependencies to load fonts etc.
 
-visNetwork(people, connections, width = "100%", height = "600px", 
+visNetwork(people, connections, width = "100%", height = "100vh", 
                        background = my_black, border = my_black) %>%
   visEdges(smooth=TRUE, width=40, shadow=TRUE, color=my_white) %>%
   visNodes(
