@@ -91,7 +91,9 @@ visNetwork(people, connections, width = "1000px", height = "600px",
     shadow=list(enabled=TRUE),
     # image = image,
     scaling = list(min=80),
-    shapeProperties = list(borderRadius=3, useBorderWithImage=T),
+    shapeProperties = list(borderRadius=3, 
+                           useBorderWithImage=T,
+                           interpolation=FALSE),
     color=list(background=my_white, border=my_white, 
                highlight=my_red, hover=my_red)
   ) %>%
