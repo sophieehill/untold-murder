@@ -71,7 +71,7 @@ my_graph <- visNetwork(people, connections, width = "100%", height = "100vh",
              maxVelocity = 1000,
              minVelocity = 5,
              forceAtlas2Based = list(gravitationalConstant = -300),
-             stabilization = TRUE) %>%
+             stabilization = FALSE) %>%
   addFontAwesome() %>%
   visLayout(randomSeed = 1023) 
 
@@ -117,7 +117,7 @@ visNetwork(people, connections, width = "100%", height = "100vh",
              maxVelocity = 1000,
              minVelocity = 5,
              forceAtlas2Based = list(gravitationalConstant = -300),
-             stabilization = TRUE) %>%
+             stabilization = FALSE) %>%
   addFontAwesome() %>%
   visLayout(randomSeed = 1023, improvedLayout=TRUE) %>%
   htmlwidgets::appendContent(htmltools::includeHTML("meta.html")) %>%
